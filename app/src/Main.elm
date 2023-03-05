@@ -1,4 +1,4 @@
-module Flick exposing (main)
+module Main exposing (main)
 
 import Browser
 import Json.Decode as D
