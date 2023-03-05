@@ -4,9 +4,15 @@ You can use this file to perform app-level initialization, but the primary
 purpose of the file is to pass control to the app’s first module.
 */
 
-import { Application } from '@nativescript/core'
+import Elm from "./src/Main.elm";
+import { start } from "elm-native-js"
 
-Application.run({ moduleName: 'app-root' })
+start(
+  {
+    elmModule: Elm,
+    elmModuleName: "Main"
+  }
+)
 
 /*
 Do not place any code after the application has been started as it will not
