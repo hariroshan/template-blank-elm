@@ -1,0 +1,15 @@
+{
+  "name": "blank",
+  "main": "app/app.ts",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@nativescript/core": "~8.4.0",
+    "@nativescript/theme": "~3.0.2"
+  },
+  "devDependencies": {
+    "@nativescript/types": "~8.4.0",
+    "@nativescript/webpack": "~5.0.12",
+    "typescript": "~4.8.4"
+  }
+}
