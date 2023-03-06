@@ -4,7 +4,7 @@ You can use this file to perform app-level initialization, but the primary
 purpose of the file is to pass control to the app’s first module.
 */
 
-import * as Elm  from "./src/Main.elm";
+import Elm from "./src/Main.elm";
 import { start } from "elm-native-js"
 
 const config = {

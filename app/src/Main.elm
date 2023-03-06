@@ -1,11 +1,8 @@
 module Main exposing (main)
 
 import Browser
-import Json.Decode as D
-import Json.Encode as E
 import Native exposing (Native)
-import Native.Attributes as NA exposing (bindAttributeWithExpression)
-import Native.Event as Event
+import Native.Attributes as NA
 import Native.Frame as Frame
 import Native.Layout as Layout
 import Native.Page as Page
@@ -18,7 +15,6 @@ type NavPage
 type alias Model =
     { rootFrame : Frame.Model NavPage
     }
-
 
 
 init : ( Model, Cmd Msg )
@@ -40,12 +36,17 @@ update msg model =
 
 
 homePage : Model -> Native Msg
-homePage model =
+homePage _ =
     Page.pageWithActionBar SyncFrame
         []
         (Native.actionBar [ NA.title "Elm Native Blank" ] [])
-        (Layout.stackLayout [ NA.height "100%" ]
-            [ Native.label [ NA.class "main", NA.text "Hello From Elm" ] ]
+        (Layout.flexboxLayout
+            [ NA.alignItems "center"
+            , NA.justifyContent "center"
+            , NA.height "100%"
+            ]
+            [ Native.label [ NA.class "main", NA.text "Hello From Elm" ] []
+            ]
         )
 
 
@@ -65,6 +66,7 @@ view model =
 subscriptions : Model -> Sub Msg
 subscriptions _ =
     Sub.none
+
 
 main : Program () Model Msg
 main =
