@@ -1189,10 +1189,10 @@ electron-to-chromium@^1.4.284:
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.320.tgz#4d83a90ff74f93939c5413c2ac5a16c696600632"
   integrity sha512-h70iRscrNluMZPVICXYl5SSB+rBKo22XfuIS1ER0OQxQZpKTnFpuS6coj7wY9M/3trv7OR88rRMOlKmRvDty7Q==
 
-elm-native-js@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/elm-native-js/-/elm-native-js-1.0.2.tgz#998a39e78b9fcb45794082ecbe801cc29f9ba514"
-  integrity sha512-KEpsq9wVO91i9OJ8KH4ZNLeNMclvy4A5SXkZNoeFlZbBMS3poEQypA5g8sPwPFFtQcPsvHmo0I6+KDiEyy8P0A==
+elm-native-js@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/elm-native-js/-/elm-native-js-1.1.0.tgz#db0304c10240c0e03a819a8e28726a9a4b085819"
+  integrity sha512-Ec8Yw9G4txOgKaGI5gPBehAlvw8A9WLZJ8wi2N6PJnYp8eth+078ENYgW3cy2qUQI+U4EHSlyonKexiGo/GjaA==
   dependencies:
     elm-taskport "^2.0.1"
     happy-dom "^6.0.4"

@@ -1,5 +1,5 @@
 {
-  "name": "blank",
+  "name": "flappy-bird",
   "main": "app/app.ts",
   "version": "1.0.0",
   "private": true,
